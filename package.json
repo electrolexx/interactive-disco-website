@@ -1,7 +1,7 @@
 {
-  "name": "project_template",
+  "name": "interactive-disco-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio site.",
   "author": "Alex Desharnais",
   "license": "ISC",
   "main": "index.js",

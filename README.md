@@ -1,6 +1,4 @@
-# React-Boilerplate
-
-This is my react-boilerplate
+# Interactive Disco Website
 
 ### Setup
 
