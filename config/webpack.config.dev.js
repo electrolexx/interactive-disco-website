@@ -7,6 +7,9 @@ module.exports = {
     path: path.resolve(__dirname, '../public'),
   },
   devtool: 'source-map',
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {

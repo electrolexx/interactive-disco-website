@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './routes/Home';
+import Project from './routes/Project';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </BrowserRouter>
+      <Router>
+        <Route exact path="/" component={Home} />
+        <Route path="/work/:projectName" component={Project} />
+        <Route path="/testing" component={Project} />
+      </Router>
     );
   }
 }

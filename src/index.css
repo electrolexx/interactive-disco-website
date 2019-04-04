@@ -23,7 +23,6 @@ html {
   background-repeat: no-repeat;
   background-color: #33353d;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -33,36 +32,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-
 a {
-  color: #ff33ff;
-}
-
-a:visited {
-  color: #ff33ff;
-}
-
-a:hover {
-  color: #ff33ff;
   text-decoration: none;
 }
-
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 img {
   display: block;
   border: 0;
 }
-
 video {
   display: block;
   border: 0;
   cursor: pointer;
 }
-
 ul {
   margin: 0;
   padding: 0;
 }
-
 li {
   display: inline-block;
   list-style: none;
