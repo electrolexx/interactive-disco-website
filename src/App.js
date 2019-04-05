@@ -9,7 +9,6 @@ class App extends Component {
       <Router>
         <Route exact path="/" component={Home} />
         <Route path="/work/:projectName" component={Project} />
-        <Route path="/testing" component={Project} />
       </Router>
     );
   }

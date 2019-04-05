@@ -1,0 +1,28 @@
+{
+  "featured": [
+    {
+      "imageFilename": "web-white-princess.jpg",
+      "client": "starz",
+      "project": "the white princess",
+      "link": "the-white-princess",
+      "tech": "html5 canvas, javascript, json, webpack",
+      "videoFilename": "the-white-princess.mp4"
+    },
+    {
+      "imageFilename": "web-davincis-demons.jpg",
+      "client": "starz",
+      "project": "da vinci's demons",
+      "link": "da-vincis-demons",
+      "tech": "tech list2",
+      "videoFilename": "da-vincis-demons.mp4"
+    },
+    {
+      "imageFilename": "web-arsonal.jpg",
+      "client": "arsonal",
+      "project": "agency site",
+      "link": "arsonal",
+      "tech": "tech list3",
+      "videoFilename": "arsonal.mp4"
+    }
+  ]
+}

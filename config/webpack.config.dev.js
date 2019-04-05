@@ -7,9 +7,6 @@ module.exports = {
     path: path.resolve(__dirname, '../public'),
   },
   devtool: 'source-map',
-  devServer: {
-    historyApiFallback: true,
-  },
   module: {
     rules: [
       {
@@ -22,7 +19,11 @@ module.exports = {
         loader: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|gif|ico)$/,
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: ['file-loader'],
+      },
+      {
+        test: /\.(webm|mp4)$/,
         loader: ['file-loader'],
       },
     ],

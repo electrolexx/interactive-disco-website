@@ -45,11 +45,6 @@ img {
   display: block;
   border: 0;
 }
-video {
-  display: block;
-  border: 0;
-  cursor: pointer;
-}
 ul {
   margin: 0;
   padding: 0;

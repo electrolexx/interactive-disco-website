@@ -28,6 +28,15 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(webm|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: { outputPath: 'static/videos/' },
+          },
+        ],
+      },
     ],
   },
   resolve: {
