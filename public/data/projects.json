@@ -9,20 +9,20 @@
       "videoFilename": "the-white-princess.mp4"
     },
     {
-      "imageFilename": "web-davincis-demons.jpg",
-      "client": "starz",
-      "project": "da vinci's demons",
-      "link": "da-vincis-demons",
-      "tech": "tech list2",
-      "videoFilename": "da-vincis-demons.mp4"
-    },
-    {
       "imageFilename": "web-arsonal.jpg",
       "client": "arsonal",
       "project": "agency site",
       "link": "arsonal",
-      "tech": "tech list3",
+      "tech": "node.js, react, express, mysql, rest api",
       "videoFilename": "arsonal.mp4"
+    },
+    {
+      "imageFilename": "web-davincis-demons.jpg",
+      "client": "starz",
+      "project": "da vinci's demons",
+      "link": "da-vincis-demons",
+      "tech": "html5 canvas, javascript, facebook javascript sdk, json",
+      "videoFilename": "da-vincis-demons.mp4"
     }
   ]
 }

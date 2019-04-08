@@ -32,7 +32,66 @@ video {
 .project-tech {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 1vw;
   padding-bottom: 0.1vw;
   text-transform: uppercase;
+}
+.arrow-left {
+  position: absolute;
+  top: 390px;
+  left: 40px;
+  cursor: pointer;
+  outline: none;
+  visibility: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.arrow-left img {
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+.arrow-right {
+  position: absolute;
+  top: 390px;
+  right: 40px;
+  cursor: pointer;
+  outline: none;
+  visibility: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.arrow-right img {
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+.arrow-left-inactive {
+  visibility: hidden;
+}
+.arrow-right-inactive {
+  visibility: hidden;
+}
+.arrow-left-active {
+  visibility: visible;
+}
+.arrow-right-active {
+  visibility: visible;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .arrow-left {
+    display: none;
+  }
+  .arrow-right {
+    display: none;
+  }
 }
