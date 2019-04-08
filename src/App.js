@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './routes/Home';
 import Project from './routes/Project';
 
+import './App.css';
+
 class App extends Component {
   render() {
     return (
@@ -10,7 +12,6 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/work/:projectName" component={Project} />
-          <Route render={() => <h1>404 Error</h1>} />
         </Switch>
       </Router>
     );

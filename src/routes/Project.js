@@ -41,6 +41,13 @@ class Project extends Component {
 
   componentDidUpdate() {
     this.loadVideo();
+    TweenMax.from(this.projectContainer, 1, {
+      delay: 0.2,
+      autoAlpha: 0,
+      onComplete: () => {
+        document.getElementById(videoID).play();
+      },
+    });
   }
 
   render() {
@@ -51,8 +58,9 @@ class Project extends Component {
       const result = item[1].find((item2, index) => {
         if (item2.link === projectPathname) {
           projectIndex = index;
-          return item2;
         }
+
+        return item2.link === projectPathname;
       });
       return result;
     });
