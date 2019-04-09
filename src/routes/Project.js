@@ -72,7 +72,6 @@ class Project extends Component {
       TweenMax.to(this.videoItem, 1, {
         delay: 0.3,
         autoAlpha: 1,
-        onComplete: () => {},
       });
     };
 

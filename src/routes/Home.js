@@ -15,6 +15,9 @@ class Home extends Component {
         <Nav />
         <Header />
         <Section title={'featured'} />
+        <Section title={'web'} />
+        <Section title={'games'} />
+        <Section title={'rich media'} />
       </div>
     );
   }

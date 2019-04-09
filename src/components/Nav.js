@@ -15,7 +15,7 @@ const Nav = () => {
       <div className="nav-container">
         <div>
           <NavLink exact to="/" className="nav-item">
-            WORK
+            HOME
           </NavLink>
         </div>
         <div>

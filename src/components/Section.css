@@ -1,24 +1,20 @@
 .section-container {
   position: relative;
-  top: 3.5vw;
   width: 93%;
   margin: 0 auto;
-  display: flex;
-  flex-flow: column;
+  display: block;
+  padding-bottom: 2.5vw;
 }
 .section-title {
   display: flex;
   color: #75777c;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   padding-bottom: 0.8vw;
 }
 .projects-container {
   display: flex;
-  flex-flow: column;
-}
-.projects-row {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
