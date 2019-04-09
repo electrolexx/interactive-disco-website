@@ -9,16 +9,13 @@ export default class Reel extends Component {
     TweenMax.from(this.reelContainer, 1.5, {
       delay: 0.3,
       autoAlpha: 0,
-      onComplete: () => {
-        document.getElementById('reelVid').play();
-      },
     });
   }
 
   render() {
     const fadeInVideo = () => {
       TweenMax.to(this.videoItem, 1, {
-        delay: 0.3,
+        delay: 0.5,
         autoAlpha: 1,
       });
     };
@@ -30,6 +27,7 @@ export default class Reel extends Component {
           id="reelVid"
           controls
           preload="auto"
+          autoPlay
           onLoadedData={fadeInVideo}
           controlsList="nodownload"
           ref={div => (this.videoItem = div)}
