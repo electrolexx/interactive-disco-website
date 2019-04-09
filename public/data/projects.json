@@ -5,7 +5,8 @@
       "client": "starz",
       "project": "the white princess",
       "link": "the-white-princess",
-      "tech": "html5 canvas, javascript, json, webpack",
+      "frontEndTech": "html5 canvas, javascript, css3, json, webpack",
+      "backEndTech": "aws ec2, elb, route53, mysql",
       "videoFilename": "the-white-princess.mp4"
     },
     {
@@ -13,7 +14,8 @@
       "client": "arsonal",
       "project": "agency site",
       "link": "arsonal",
-      "tech": "node.js, react, express, mysql, rest api",
+      "frontEndTech": "react, css3, json, webpack",
+      "backEndTech": "aws ec2, cloudfront, route53, node.js, express, mysql, rest api",
       "videoFilename": "arsonal.mp4"
     },
     {
@@ -21,7 +23,8 @@
       "client": "starz",
       "project": "da vinci's demons",
       "link": "da-vincis-demons",
-      "tech": "html5 canvas, javascript, facebook sdk, json",
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, json, webpack",
+      "backEndTech": "apache, php, imagemagick",
       "videoFilename": "da-vincis-demons.mp4"
     }
   ],
@@ -31,48 +34,54 @@
       "client": "warner brothers",
       "project": "magic mike xxl",
       "link": "magic-mike-xxl",
-      "tech": "html5 canvas, javascript, facebook sdk, twitter api, json, webpack",
-      "videoFilename": "web-magic-mike-xxl.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, twitter api, json, webpack",
+      "backEndTech": "apache, php, aws s3",
+      "videoFilename": "magic-mike-xxl.mp4"
     },
     {
       "imageFilename": "web-maze-runner.jpg",
       "client": "20th century fox",
       "project": "the maze runner",
       "link": "the-maze-runner",
-      "tech": "html5 canvas, javascript, facebook sdk, twitter api, json, webpack",
-      "videoFilename": "web-maze-runner.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, json, webpack",
+      "backEndTech": "apache, php, aws s3",
+      "videoFilename": "the-maze-runner.mp4"
     },
     {
       "imageFilename": "web-nysm.jpg",
       "client": "summit entertainment",
       "project": "now you see me",
       "link": "now-you-see-me",
-      "tech": "html5 canvas, javascript, json",
-      "videoFilename": "web-nysm.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, twitter api, json",
+      "backEndTech": "apache, php",
+      "videoFilename": "now-you-see-me.mp4"
     },
     {
       "imageFilename": "web-taken3-bmkma.jpg",
       "client": "20th century fox",
       "project": "taken 3",
       "link": "taken-3",
-      "tech": "html5 canvas, javascript, json",
-      "videoFilename": "web-taken3-bmkma.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, twitter api, json",
+      "backEndTech": "apache, php, aws s3",
+      "videoFilename": "taken-3.mp4"
     },
     {
       "imageFilename": "web-burt-wonderstone.jpg",
       "client": "warner brothers",
       "project": "the incredible burt wonderstone",
       "link": "burt-wonderstone",
-      "tech": "html5 canvas, javascript, json",
-      "videoFilename": "web-burt-wonderstone.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, twitter api, json",
+      "backEndTech": "apache, php, aws s3",
+      "videoFilename": "burt-wonderstone.mp4"
     },
     {
       "imageFilename": "web-jack-the-giant-slayer.jpg",
       "client": "warner brothers",
       "project": "jack the giant slayer",
       "link": "jack-the-giant-slayer",
-      "tech": "html5 canvas, javascript, json",
-      "videoFilename": "web-jack-the-giant-slayer.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, twitter api, json",
+      "backEndTech": "apache, php, aws s3",
+      "videoFilename": "jack-the-giant-slayer.mp4"
     }
   ],
   "games": [
@@ -81,24 +90,27 @@
       "client": "warner brothers",
       "project": "tammy - jet ski challenge",
       "link": "tammy",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "games-tammy.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, twitter api, json",
+      "backEndTech": "apache, php",
+      "videoFilename": "tammy.mp4"
     },
     {
       "imageFilename": "games-blended.jpg",
       "client": "warner brothers",
       "project": "blended - safari adventure",
       "link": "blended",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "games-blended.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, twitter api, json",
+      "backEndTech": "apache, php",
+      "videoFilename": "blended.mp4"
     },
     {
       "imageFilename": "games-percy-jackson.jpg",
       "client": "20th century fox",
       "project": "percy jackson",
       "link": "percy-jackson",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "games-percy-jackson.mp4"
+      "frontEndTech": "html5 canvas, javascript, css3, facebook sdk, twitter api, json",
+      "backEndTech": "apache, php",
+      "videoFilename": "percy-jackson.mp4"
     }
   ],
   "rich media": [
@@ -106,49 +118,55 @@
       "imageFilename": "banners-american-gods-s2.jpg",
       "client": "starz",
       "project": "american gods",
-      "link": "american-gods-s2",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "banners-american-gods-s2.mp4"
+      "link": "american-gods",
+      "frontEndTech": "html5, javascript, css3, doubleclick api",
+      "backEndTech": "doubleclick studio",
+      "videoFilename": "american-gods-s1.mp4"
     },
     {
       "imageFilename": "social-deception.jpg",
       "client": "abc",
       "project": "deception",
-      "link": "deception-s1",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "social-deception.mp4"
+      "link": "deception",
+      "frontEndTech": "facebook canvas ad",
+      "backEndTech": "facebook",
+      "videoFilename": "deception.mp4"
     },
     {
       "imageFilename": "banners-baskets-s2.jpg",
       "client": "fx",
       "project": "baskets",
-      "link": "baskets-s2",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "banners-baskets-s2.mp4"
+      "link": "baskets",
+      "frontEndTech": "html5, javascript, css3, doubleclick api",
+      "backEndTech": "doubleclick studio",
+      "videoFilename": "baskets.mp4"
     },
     {
       "imageFilename": "banners-handmaids-tale-s1.jpg",
       "client": "hulu",
       "project": "the handmaid's tale",
       "link": "the-handmaids-tale",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "banners-handmaids-tale-s1.mp4"
+      "frontEndTech": "html5, javascript, css3, doubleclick api",
+      "backEndTech": "doubleclick studio",
+      "videoFilename": "the-handmaids-tale.mp4"
     },
     {
       "imageFilename": "banners-the-americans.jpg",
       "client": "fx",
       "project": "the americans",
       "link": "the-americans",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "banners-the-americans.mp4"
+      "frontEndTech": "after effects, html5, javascript, css3, doubleclick api",
+      "backEndTech": "doubleclick studio",
+      "videoFilename": "the-americans.mp4"
     },
     {
       "imageFilename": "banners-fx-june-comedies.jpg",
       "client": "fx",
       "project": "june comedies",
-      "link": "fx-june-comedies",
-      "tech": "html5 canvas, javascript, json, webpack",
-      "videoFilename": "banners-fx-june-comedies.mp4"
+      "link": "june-comedies",
+      "frontEndTech": "papervision 3d, html5, javascript, flash, doubleclick api",
+      "backEndTech": "doubleclick studio",
+      "videoFilename": "june-comedies.mp4"
     }
   ]
 }

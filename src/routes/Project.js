@@ -14,6 +14,7 @@ let projectName = null;
 let projectData = null;
 let projectTitle = null;
 let projectIndex = null;
+let sectionIndex = null;
 let videoID = null;
 let prevProjectPath = null;
 let nextProjectPath = null;
@@ -21,13 +22,6 @@ let arrowLeftClassName = 'arrow-left';
 let arrowRightClassName = 'arrow-right';
 
 class Project extends Component {
-  loadVideo = () => {
-    document.getElementById(videoID).src = `/${require(`../../public/videos/${
-      projectData[0].videoFilename
-    }`)}`;
-    document.getElementById(videoID).load();
-  };
-
   componentDidMount() {
     this.loadVideo();
     TweenMax.from(this.projectContainer, 1, {
@@ -50,14 +44,22 @@ class Project extends Component {
     });
   }
 
+  loadVideo = () => {
+    document.getElementById(videoID).src = `/${require(`../../public/videos/${
+      projectData[sectionIndex].videoFilename
+    }`)}`;
+    document.getElementById(videoID).load();
+  };
+
   render() {
     projectPathname = this.props.match.params.projectName;
     projectName = projectPathname.replace(/-/g, ' ');
 
-    projectData = Object.entries(siteData).map(item => {
+    projectData = Object.entries(siteData).map((item, secIndex) => {
       const result = item[1].find((item2, index) => {
         if (item2.link === projectPathname) {
           projectIndex = index;
+          sectionIndex = secIndex;
         }
 
         return item2.link === projectPathname;
@@ -65,7 +67,7 @@ class Project extends Component {
       return result;
     });
 
-    projectTitle = `${projectData[0].client} - ${projectName}`;
+    projectTitle = `${projectData[sectionIndex].client} - ${projectName}`;
     videoID = `videoPlayer-${projectPathname}`;
 
     const fadeInVideo = () => {
@@ -79,17 +81,17 @@ class Project extends Component {
       arrowLeftClassName += ' arrow-left-inactive';
       arrowRightClassName = ' arrow-right';
       prevProjectPath = '';
-      nextProjectPath = `/work/${Object.entries(siteData)[0][1][projectIndex + 1].link}`;
-    } else if (projectIndex === Object.entries(siteData)[0].length) {
+      nextProjectPath = `/work/${Object.entries(siteData)[sectionIndex][1][projectIndex + 1].link}`;
+    } else if (projectIndex === Object.entries(siteData)[sectionIndex][1].length - 1) {
       arrowLeftClassName = ' arrow-left';
       arrowRightClassName += ' arrow-right-inactive';
-      prevProjectPath = `/work/${Object.entries(siteData)[0][1][projectIndex - 1].link}`;
+      prevProjectPath = `/work/${Object.entries(siteData)[sectionIndex][1][projectIndex - 1].link}`;
       nextProjectPath = '';
     } else {
       arrowLeftClassName = ' arrow-left';
       arrowRightClassName = ' arrow-right';
-      nextProjectPath = `/work/${Object.entries(siteData)[0][1][projectIndex + 1].link}`;
-      prevProjectPath = `/work/${Object.entries(siteData)[0][1][projectIndex - 1].link}`;
+      nextProjectPath = `/work/${Object.entries(siteData)[sectionIndex][1][projectIndex + 1].link}`;
+      prevProjectPath = `/work/${Object.entries(siteData)[sectionIndex][1][projectIndex - 1].link}`;
     }
 
     return (
@@ -108,8 +110,10 @@ class Project extends Component {
           <source src="" type="video/mp4" />
         </video>
         <div className="info-container">
-          <div className="project-tech-title">TECHNOLOGY</div>
-          <div className="project-tech">{projectData[0].tech}</div>
+          <div className="project-tech-title">FRONT-END TECHNOLOGY</div>
+          <div className="project-tech">{projectData[sectionIndex].frontEndTech}</div>
+          <div className="project-tech-title">BACK-END TECHNOLOGY</div>
+          <div className="project-tech">{projectData[sectionIndex].backEndTech}</div>
         </div>
         <Link to={prevProjectPath}>
           <div className={arrowLeftClassName}>

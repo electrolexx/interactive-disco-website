@@ -1,0 +1,9 @@
+.about-container {
+  top: 5vw;
+  width: 70vw;
+  margin: 0 auto;
+  color: #75777c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2vw;
+  text-align: justify;
+}

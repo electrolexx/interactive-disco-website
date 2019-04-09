@@ -6,7 +6,7 @@ video {
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1vw;
+  margin-bottom: 1.5vw;
   outline: none;
   -webkit-box-shadow: 0px 3px 15px 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 3px 15px 5px rgba(0, 0, 0, 0.3);
@@ -34,7 +34,8 @@ video {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 1vw;
-  padding-bottom: 0.1vw;
+  padding-bottom: 1.5vw;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 .arrow-left {
