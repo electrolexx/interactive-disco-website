@@ -35,3 +35,10 @@
 .nav-item:hover {
   color: #ffffff;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 700px) {
+  .logo-container img {
+    display: none;
+  }
+}

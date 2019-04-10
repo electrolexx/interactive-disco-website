@@ -65,7 +65,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": ".",
+  "homepage": "https://interactivedisco.com",
   "browserslist": [
     ">0.2%",
     "not dead",
