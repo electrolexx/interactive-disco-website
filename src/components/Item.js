@@ -12,8 +12,8 @@ class Item extends Component {
     };
 
     return (
-      <div className="item-container" ref={div => (this.projectImg = div)}>
-        <LazyLoad height={260} offset={-100} once>
+      <div id="item" className="item-container" ref={div => (this.projectImg = div)}>
+        <LazyLoad height={100} once resize>
           <img
             onLoad={fadeInImg}
             src={require(`../../public/images/portfolio/${this.props.imageThumb}`)}
