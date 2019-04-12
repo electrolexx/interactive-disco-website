@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { TweenMax } from 'gsap/TweenMax';
 import Nav from '../components/Nav';
-import siteData from '../../public/data/projects.json';
 
+import siteData from '../../public/data/projects.json';
 import arrowLeft from '../../public/images/nav-left-arrow.png';
 import arrowRight from '../../public/images/nav-right-arrow.png';
 
