@@ -2,10 +2,18 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: ['@babel/polyfill', './src/index.js'],
+  entry: {
+    main: ['@babel/polyfill', './src/index.js'],
+    vendor: ['gsap'],
+  },
   output: {
     filename: 'static/js/[name]-[hash].js',
     path: path.resolve(__dirname, '../build'),
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   devtool: 'cheap-module-source-map',
   module: {
