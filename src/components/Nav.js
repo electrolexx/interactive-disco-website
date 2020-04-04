@@ -18,11 +18,11 @@ const Nav = () => {
             WORK
           </NavLink>
         </div>
-        <div>
+        {/* <div>
           <NavLink to="/reel" className="nav-item">
             REEL
           </NavLink>
-        </div>
+        </div> */}
         <div>
           <NavLink to="/about" className="nav-item">
             ABOUT

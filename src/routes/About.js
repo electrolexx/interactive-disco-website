@@ -14,23 +14,23 @@ export default class About extends Component {
 
   render() {
     return (
-      <div className="About" ref={div => (this.aboutContainer = div)}>
+      <div className="About" ref={(div) => (this.aboutContainer = div)}>
         <Nav />
         <div className="about-container">
           <p>
-            As an experienced director with over 10 years of managing and leading digital projects,
-            I have supervised and mentored creative and technical teams while also being hands-on as
-            needed on cross-platform executions for mobile, web, and social campaigns.
+            Experienced senior software systems engineer with a demonstrated history of leading
+            agile based engineering teams. A hands-on leader mentoring product, software, and
+            creative team members on cross-platform executions.
           </p>
           <p>
-            In my current role, my primary responsibility is to support my team and ensure long-term
-            goals are achieved with limited resources. My day-to-day consists of leading software
-            architecture and optimization strategies, looking for bottlenecks in our work flow,
-            coordinating with our creative and account teams, and prioritizing what gets done.
+            In my current role, primary responsibilities include supporting my team and ensuring
+            long-term goals are achieved with limited resources. My day-to-day consists of leading
+            software architecture and optimization strategies, Removing bottleneck blockers in our
+            work flow, and prioritizing what gets done.
           </p>
           <p>
-            I’m an expert problem solver who is willing to wrangle complex problems and push the
-            envelope in a fast-paced deadline driven environment.
+            I’m a problem solver who is willing to wrangle complex problems and push the envelope in
+            a fast-paced deadline driven environment.
           </p>
         </div>
       </div>
